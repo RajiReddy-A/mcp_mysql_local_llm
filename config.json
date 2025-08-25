@@ -1,0 +1,25 @@
+{
+  "systemPrompt": "You are a helpful assistant that can also use MCP tools.",
+  "llm": {
+    "provider": "openai",
+    "model": "qwen3:8b",
+    "base_url": "http://localhost:11434/v1",
+    "api_key": "ollama",
+    "temperature": 0.2
+  },
+  "mcpServers": {
+    "mysql": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@executeautomation/database-server",
+        "--mysql",
+        "--host", "localhost",
+        "--database", "treedb",
+        "--port", "3306",
+        "--user", "colab",
+        "--password", "colab123"
+      ]
+    }
+  }
+}
