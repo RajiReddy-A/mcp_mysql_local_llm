@@ -42,13 +42,7 @@ Close & reopen your terminal so `%USERPROFILE%\.local\bin` is on PATH.
 Open **a dedicated Command Prompt** and run (leave it open):
 
 ```cmd
-npx -y @executeautomation/database-server ^
-  --mysql ^
-  --host localhost ^
-  --database treedb ^
-  --port 3306 ^
-  --user colab ^
-  --password colab123
+npx -y @executeautomation/database-server --mysql --host localhost --database treedb --port 3306 --user colab --password colab123
 ```
 
 You should see logs like "MySQL connection established successfully" and "Starting MCP server…".
